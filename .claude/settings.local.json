@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@14 . --typescript --tailwind --app --no-src-dir --use-npm --no-eslint --no-import-alias)",
+      "Bash(npx create-next-app@14 temp-app --typescript --tailwind --app --no-src-dir --use-npm --no-eslint --no-import-alias)",
+      "Bash(cp -r temp-app/* .)",
+      "Bash(cp temp-app/.gitignore .)",
+      "Bash(rm -rf temp-app)",
+      "Bash(cp temp-app/package.json .)",
+      "Bash(cp temp-app/package-lock.json .)",
+      "Bash(cp temp-app/postcss.config.mjs .)",
+      "Bash(cp temp-app/tailwind.config.ts .)",
+      "Bash(cp temp-app/tsconfig.json .)",
+      "Bash(node -e \":*)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
